@@ -1,0 +1,255 @@
+*{
+    font-family: 'poppins' ,'san-serif';
+    box-sizing: border-box;
+}
+
+body{
+    background: #000 ;
+    color: #fff;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8px;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav img{
+     width: 150px;
+     cursor: pointer;
+}
+
+nav button{
+    color: #fff;
+    font-size: 12px;
+    background-color: #db0001;
+    border: 0;
+    padding: 7px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.icon{
+    background-color: transparent;
+    border:2px solid white;
+}
+nav button i{
+    color: #fff;
+    font-size: large;
+}
+
+.content{
+    position: absolute;
+    text-align: center;
+    margin-top: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 70px;
+    max-width: 650px;
+}
+
+.content h3{
+    font-weight: 400;
+    margin-bottom:20px ;
+}
+
+.emails{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 30px;
+    border-radius: 4px;
+    margin-bottom: 25%;
+}
+
+.emails input{
+    flex:1;
+    margin-left: 20px;
+    outline: 0;
+    border: 0;
+    padding: 15px 30px;
+}
+
+.emails button{
+    outline: 0;
+    border: 0;
+    color: #fff;
+    background-color: #db0001;
+    font-size: 16p;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+.first{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.first-1{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    flex-wrap:wrap ;
+    padding: 50px 0;
+}
+
+.first-2{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.image{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.image img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.image h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordian .context{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordian input[type="radio"]:checked+ label + .context{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordian input[type="radio"]:checked+ label::after{
+    transform: rotate(135deg);
+}
+
+.faq .emails{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.faq small{
+    font-size: 13px;
+}
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col{
+     flex-basis: 25%;
+     flex-grow: 1;
+     margin-bottom: 20px;
+}
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+    display: flex;
+    width: 100%;
+    flex-wrap:wrap ;
+}
+
+.footer .icon{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.copyright.txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
